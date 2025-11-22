@@ -415,6 +415,7 @@ body {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
+  user-select: none;
 }
 
 .avatar:hover {
