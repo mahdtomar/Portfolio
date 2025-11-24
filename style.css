@@ -237,7 +237,7 @@ body {
   align-items: center;
   gap: 60px;
   min-height: 76vh;
-  padding: 120px 0; /* more top/bottom rhythm per design */
+  padding: 120px 8px; /* more top/bottom rhythm per design */
 }
 
 .hero h1 {
