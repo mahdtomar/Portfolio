@@ -550,10 +550,11 @@ body {
   background: #616161;
   box-shadow: none;
   border: none;
-  &:hover {
+  
+}
+.project a.disabled :hover {
     box-shadow: none;
     border: none;
-  }
 }
 .skills-cols {
   display: grid;
