@@ -495,6 +495,15 @@ body {
   gap: 20px;
 }
 
+.project {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .project .thumb {
   height: 160px;
   border-radius: 12px;
@@ -505,6 +514,12 @@ body {
   );
   border: 1px solid var(--border);
   transition: transform 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+}
+.project .thumb img {
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .project:hover .thumb {
@@ -527,7 +542,19 @@ body {
   color: var(--muted);
   margin: 0;
 }
-
+.project a {
+  display: block;
+  text-align: center;
+}
+.project a.disabled {
+  background: #616161;
+  box-shadow: none;
+  border: none;
+  &:hover {
+    box-shadow: none;
+    border: none;
+  }
+}
 .skills-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
